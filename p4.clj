@@ -10,4 +10,4 @@
   (let [s (str x)]
     (= s (clojure.string/reverse s))))
 
-(println (first (filter palindrome? products)))
+(time (println (first (filter palindrome? products))))

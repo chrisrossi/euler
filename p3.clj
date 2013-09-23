@@ -14,4 +14,5 @@
     :else (empty? (factors x))))
 
 
-(println (first (filter prime? (sort > (flatten (factors 600851475143))))))
+(time (println (first (filter prime? 
+  (sort > (flatten (factors 600851475143)))))))
