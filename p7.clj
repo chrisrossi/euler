@@ -9,6 +9,6 @@
   [x]
   (empty? (factors x)))
 
-(def primes (cons 2 (filter prime? (iterate (partial + 2) 3))))
+(defn primes [] (cons 2 (filter prime? (iterate (partial + 2) 3))))
 
-(time (println (first (drop 10000 primes))))
+(time (println (first (drop 10000 (primes)))))
